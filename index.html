@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="/window_logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civic Technologies</title>
+
+  <style>
+    .fullscreen-container {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      z-index: 9999;
+    }
+
+    .loader-wrapper {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spinning-ring {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 3px solid transparent;
+      border-top-color: #0177B2;
+      border-bottom-color: #0177B2;
+      border-radius: 50%;
+      -webkit-animation: spin 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      animation: spin 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      will-change: transform;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+
+    .loading-logo {
+      height: 200px;
+      width: 200px;
+      position: relative;
+      z-index: 10;
+      -webkit-animation: pulse 2s infinite ease-in-out;
+      animation: pulse 2s infinite ease-in-out;
+      will-change: transform, opacity;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes pulse {
+      0% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      50% {
+        -webkit-transform: scale(1.05);
+        opacity: 1;
+      }
+
+      100% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="fullscreen-container">
+      <div class="loader-wrapper">
+        <div class="spinning-ring"></div>
+        <img src="/logo.svg" alt="Civic Technologies Logo" class="loading-logo" />
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
