@@ -6,16 +6,16 @@ import lodhaImg from "../../assets/projects_images/Lodha Bellezza.webp";
 import nddbImg from "../../assets/projects_images/National Dairy Development Board (NDDB).webp";
 import iitImg from "../../assets/projects_images/Indian Institute of Technology (IIT).webp";
 import bhuImg from "../../assets/projects_images/Institute of Medical Science, Banaras Hindu University.webp";
-import rainbowImg from "../../assets/projects_images/Rainbow Hospitals.webp";
+import rainbowImg from "../../assets/industry_images/hospital_icu2.webp";
 import gvkImg from "../../assets/projects_images/GVK Biosciences Pvt.webp";
-import sarvothamImg from "../../assets/projects_images/Sarvotham Care Pvt.webp";
+import sarvothamImg from "../../assets/industry_images/Sarvotham Care Pvt. Ltd..webp";
 import icleanHqImg from "../../assets/projects_images/Integrated Clean Room Technologies Pvt. Ltd..webp";
-import mylanImg from "../../assets/projects_images/Mylan Labs.webp";
-import cclImg from "../../assets/projects_images/CCL Products India Ltd.avif";
-import iitGImg from "../../assets/projects_images/IIT Guwahati.webp";
-import tata from "../../assets/projects_images/Tata Semiconductor Assembly.jpg";
-import Exide from "../../assets/projects_images/Exide energy solutions limited.jpg";
-import ola from "../../assets/projects_images/ola.avif";
+import mylanImg from "../../assets/projects_images/Indian Institute of Technology (IIT).webp";
+import cclImg from "../../assets/industry_images/CCL.webp";
+import iitGImg from "../../assets/industry_images/IITLab.webp";
+import tata from "../../assets/projects_images/Tata Semiconductor Assembly.webp";
+import Exide from "../../assets/projects_images/Exide energy solutions limited.webp";
+import ola from "../../assets/projects_images/ola.webp";
 
 export interface Project {
   id: number;
@@ -32,10 +32,10 @@ export const projects: Project[] = [
   {
     id: 1,
     name: "Integrated Clean Room Technologies Pvt. Ltd. (Iclean)",
-    projectType: "Corporate Office",
+    projectType: "Factory",
     location: "Kompally, Hyd",
     category: "Commercial",
-    image: icleanHqImg
+    image: iil2Img
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     projectType: "Lab area for QA, QC, AH&HH",
     location: "Karakapatla, Hyd",
     category: "Industrial",
-    image: iil2Img
+    image: icleanHqImg
   },
   {
     id: 6,

@@ -7,7 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import IconButton from '@mui/material/IconButton';
 
-import Logo from '../../assets/clintlogos/Logo_00008.svg';
+import Logo from '../../assets/clintlogos/Logo_00008.webp';
 
 const Navbar: React.FC = () => {
     const location = useLocation();

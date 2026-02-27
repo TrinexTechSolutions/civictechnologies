@@ -9,7 +9,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { useEffect, useState } from "react";
-import Logo from '../../assets/clintlogos/Logo_00008.svg';
+import Logo from '../../assets/clintlogos/Logo_00008.webp';
 
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();

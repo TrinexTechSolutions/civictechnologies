@@ -19,18 +19,18 @@ import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 
 // Assets
-import DividerImg from '../../assets/clintlogos/download.svg';
+import DividerImg from '../../assets/clintlogos/download.webp';
 import IndustrialDemoBg from '../../assets/industry_images/Sevilance.webp';
 import GvkBiosciencesImg from '../../assets/industry_images/access_controle.webp';
-import NimsHospitalImg from '../../assets/industry_images/FIREALARM1.jpeg';
+import NimsHospitalImg from '../../assets/industry_images/FIREALARM1.webp';
 import NiabBiotechImg from '../../assets/industry_images/CabelSyatem.webp';
-import IitGuwahatiImg from '../../assets/industry_images/BMSSERVICES.jpeg';
-import LodhaTowersImg from '../../assets/industry_images/Electrical.jpeg';
+import IitGuwahatiImg from '../../assets/industry_images/BMSSERVICES.webp';
+import LodhaTowersImg from '../../assets/industry_images/Electrical.webp';
 import ecs11111 from '../../assets/industry_images/ecl1.webp';
 import ecsecs from '../../assets/industry_images/ecl2.webp';
-import bms1 from '../../assets/industry_images/BMS!!.jpeg';
-import bms2 from '../../assets/industry_images/BMS22.jpeg';
-import fire1 from '../../assets/industry_images/FiREALARM2.jpeg';
+import bms1 from '../../assets/industry_images/BMS!!.webp';
+import bms2 from '../../assets/industry_images/BMS22.webp';
+import fire1 from '../../assets/industry_images/FiREALARM2.webp';
 import fire2 from '../../assets/industry_images/Fire2.webp';
 import servilance1 from '../../assets/industry_images/sevilance1.webp';
 import servilance2 from '../../assets/industry_images/sevilance2.webp';

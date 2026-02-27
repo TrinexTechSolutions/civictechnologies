@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ScrollToTopArrow from '../components/common/ScrollToTopArrow';
 import ParallaxBackground from '../components/common/ParallaxBackground';
-import HeroBg from '../assets/clintlogos/hero_bg_3.jpg'; // Imported the Hero Image
-import DividerImg from '../assets/clintlogos/download.svg';
+import HeroBg from '../assets/clintlogos/hero_bg_3.webp'; // Imported the Hero Image
+import DividerImg from '../assets/clintlogos/download.webp';
 import BannerImg from '../assets/clintlogos/about_bg.webp'; // Imported the Banner Image
 
 const About: React.FC = () => {

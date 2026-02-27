@@ -8,9 +8,9 @@ import PublicIcon from '@mui/icons-material/Public';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import HeroBg from '../../assets/industry_images/AboutIMG.webp';
-import HomeBgImage from '../../assets/clintlogos/bg_temp_4.png';
-import LogoWatermark from '../../assets/clintlogos/hero_bg_watermark_2.svg';
+import HeroBg from '../../assets/industry_images/About.webp';
+import HomeBgImage from '../../assets/clintlogos/bg_temp_4.webp';
+import LogoWatermark from '../../assets/clintlogos/hero_bg_watermark_2.webp';
 
 const Hero: React.FC = () => {
     const { ref: inViewRef, inView } = useInView({

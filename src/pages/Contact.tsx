@@ -10,8 +10,8 @@ import { MapPin, Phone, Mail, Building2 } from 'lucide-react';
 import SendIcon from '@mui/icons-material/Send';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-import HeroBg from '../assets/clintlogos/hero_bg_3.jpg';
-import DividerImg from '../assets/clintlogos/download.svg';
+import HeroBg from '../assets/clintlogos/hero_bg_3.webp';
+import DividerImg from '../assets/clintlogos/download.webp';
 import Clients from '../components/sections/Clients';
 
 const Contact: React.FC = () => {

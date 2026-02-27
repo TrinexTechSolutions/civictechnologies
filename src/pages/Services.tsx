@@ -12,14 +12,14 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import SettingsPhoneIcon from '@mui/icons-material/SettingsPhone';
 import VpnKeyIcon from '@mui/icons-material/VpnKey'; import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Added ArrowForwardIcon
-import HeroBg from '../assets/clintlogos/hero_bg_3.jpg';
-import DividerImg from '../assets/clintlogos/download.svg';
+import HeroBg from '../assets/clintlogos/hero_bg_3.webp';
+import DividerImg from '../assets/clintlogos/download.webp';
 import IndustrialDemoBg from '../assets/industry_images/Sevilance.webp';
 import GvkBiosciencesImg from '../assets/industry_images/access_controle.webp';
-import NimsHospitalImg from '../assets/industry_images/FIREALARM1.jpeg';
+import NimsHospitalImg from '../assets/industry_images/FIREALARM1.webp';
 import NiabBiotechImg from '../assets/industry_images/CabelSyatem.webp';
-import IitGuwahatiImg from '../assets/industry_images/BMSSERVICES.jpeg';
-import LodhaTowersImg from '../assets/industry_images/Electrical.jpeg';
+import IitGuwahatiImg from '../assets/industry_images/BMSSERVICES.webp';
+import LodhaTowersImg from '../assets/industry_images/Electricall.webp';
 
 const Services: React.FC = () => {
     const { ref } = useInView({

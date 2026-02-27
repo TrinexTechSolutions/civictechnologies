@@ -6,12 +6,12 @@ import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 
 // Images
-import MarutiImg from '../../assets/industry_images/Baterry.jpeg';
+import MarutiImg from '../../assets/projects_images/Exide energy solutions limited.webp';
 import NDDBImg from '../../assets/projects_images/National Dairy Development Board (NDDB).webp';
-import IITImg from '../../assets/industry_images/pharma_cleanrooms_2.webp';
-import NIABImg from '../../assets/projects_images/National Institute of Animal Biotechnology.webp';
+import IITImg from '../../assets/projects_images/ola.webp';
+import NIABImg from '../../assets/industry_images/wareee.webp';
 import ColgateImg from '../../assets/projects_images/Colgate Palmolive.webp';
-import LancoImg from '../../assets/projects_images/Tata Semiconductor Assembly.jpg';
+import LancoImg from '../../assets/projects_images/Tata Semiconductor Assembly.webp';
 
 
 const ProjectsShowcase: React.FC = () => {
@@ -43,21 +43,21 @@ const ProjectsShowcase: React.FC = () => {
             image: NDDBImg
         },
         {
-            name: "IIT Guwahati Medical Lab",
-            client: "IIT Guwahati",
-            location: "Assam",
+            name: "Ola Cell Technologies Pvt Ltd",
+            client: "Ola",
+            location: "Chennai",
             image: IITImg
         },
         {
-            name: "National Institute of Animal Biotechnology",
-            client: "NIAB",
-            location: "Hyderabad",
+            name: "Waaree Energies Limited",
+            client: "Waaree Energies",
+            location: "Gujarat",
             image: NIABImg
         },
         {
-            name: "TDS Lithium-Ion Battery Gujarat Pvt Ltd",
-            client: "Maruti Suzuki",
-            location: "Gujarat",
+            name: "Exide Energy Solutions",
+            client: "Exide",
+            location: "Karnataka",
             image: MarutiImg
         }
 

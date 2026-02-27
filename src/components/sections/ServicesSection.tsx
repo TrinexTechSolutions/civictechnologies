@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
-import service4 from '../../assets/industry_images/BMSSERVICES.jpeg';
-import service3 from '../../assets/industry_images/electricservice.jpeg';
-import service2 from '../../assets/industry_images/HomeService2.webp';
-import service1 from '../../assets/industry_images/EMS.jpeg';
+import service4 from '../../assets/industry_images/BMSSERVICES.webp';
+import service3 from '../../assets/industry_images/electricservice.webp';
+import service2 from '../../assets/industry_images/HAVC.webp';
+import service1 from '../../assets/industry_images/EMS!.webp';
 
 const services = [
   {
