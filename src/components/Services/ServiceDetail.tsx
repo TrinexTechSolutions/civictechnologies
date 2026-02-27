@@ -25,7 +25,7 @@ import GvkBiosciencesImg from '../../assets/industry_images/access_controle.webp
 import NimsHospitalImg from '../../assets/industry_images/FIREALARM1.webp';
 import NiabBiotechImg from '../../assets/industry_images/CabelSyatem.webp';
 import IitGuwahatiImg from '../../assets/industry_images/BMSSERVICES.webp';
-import LodhaTowersImg from '../../assets/industry_images/Electrical.webp';
+import LodhaTowersImg from '../../assets/industry_images/Electricall.webp';
 import ecs11111 from '../../assets/industry_images/ecl1.webp';
 import ecsecs from '../../assets/industry_images/ecl2.webp';
 import bms1 from '../../assets/industry_images/BMS!!.webp';
