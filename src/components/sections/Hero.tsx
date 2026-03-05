@@ -202,7 +202,7 @@ if (typeof window !== 'undefined' && !document.head.querySelector('style[data-he
     // HERO VIEW
     // =========================================================================
     return (
-        <div className="w-full overflow-x-hidden">
+        <div className="w-full overflow-x-hidden" style={{ contain: 'layout' }}>
             <section ref={inViewRef} className="relative h-auto md:min-h-[100svh] overflow-hidden">
                 <BackgroundElements />
 
