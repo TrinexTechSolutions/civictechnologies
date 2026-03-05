@@ -147,22 +147,18 @@ const Hero: React.FC = () => {
                 </motion.div>
             </div>
 
-            <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 md:mt-0 relative pointer-events-auto"
-            >
+            <div className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 md:mt-0 relative pointer-events-auto">
                 <div className="relative rounded-3xl overflow-hidden w-full max-w-[400px] lg:max-w-[500px] group">
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0177B2]/40 to-transparent z-10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <img
                         src={HeroBg}
                         alt="About Civic Technologies"
-                        className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-110"
+                        className="w-full h-auto object-cover will-change-transform"
+                        style={{ display: 'block', backfaceVisibility: 'hidden' }}
+                        loading="eager"
                     />
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 
@@ -204,7 +200,7 @@ const Hero: React.FC = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+                    transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
                     className="relative md:absolute mt-[-20px] md:mt-0 md:top-[calc(75vh-120px)] lg:top-[calc(75vh-100px)] left-0 right-0 z-20 pointer-events-auto"
                 >
                     <div className="w-full md:container md:mx-auto px-0 md:px-4 lg:px-6">

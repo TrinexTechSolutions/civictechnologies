@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 
 // Images
-import MarutiImg from '../../assets/projects_images/Exide energy solutions limited.webp';
+import MarutiImg from '../../assets/industry_images/hospital_icu2.webp';
 import NDDBImg from '../../assets/projects_images/National Dairy Development Board (NDDB).webp';
 import IITImg from '../../assets/projects_images/ola.webp';
 import NIABImg from '../../assets/industry_images/wareee.webp';
@@ -55,9 +55,9 @@ const ProjectsShowcase: React.FC = () => {
             image: NIABImg
         },
         {
-            name: "Exide Energy Solutions",
-            client: "Exide",
-            location: "Karnataka",
+            name: "Sarvotham Care limited",
+            client: "Sarvotham",
+            location: "Hyderabad",
             image: MarutiImg
         }
 

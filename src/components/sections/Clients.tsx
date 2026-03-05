@@ -100,7 +100,7 @@ const Clients: React.FC = () => {
 
                 {/* Row 2 */}
                 <div className="w-full relative z-20 flex flex-col items-center mt-1">
-                    <h3 className="text-gray-400 font-medium text-xs md:text-sm tracking-wide mb-6 inline-block opacity-70">
+                    <h3 className="text-gray-600 font-medium text-xs md:text-sm tracking-wide mb-6 inline-block">
                         In collaboration with iCLEAN
                     </h3>
                     <div className="marquee-container w-full overflow-hidden">
