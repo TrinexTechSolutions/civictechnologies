@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
@@ -91,6 +92,21 @@ const Hero: React.FC = () => {
     };
 
     // Shared About Section Component
+    const MemoizedImageSection = React.memo(() => (
+        <div className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 md:mt-0 relative pointer-events-auto">
+            <div className="relative rounded-3xl overflow-hidden w-full max-w-[400px] lg:max-w-[500px] group">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0177B2]/40 to-transparent z-10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img
+                    src={HeroBg}
+                    alt="About Civic Technologies"
+                    className="w-full h-auto object-cover will-change-transform"
+                    style={{ display: 'block', backfaceVisibility: 'hidden' }}
+                    loading="eager"
+                />
+            </div>
+        </div>
+    ));
+
     const renderAboutSection = () => (
         <div className="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12 lg:gap-20 w-full max-w-7xl mx-auto">
             <div className="w-full md:w-1/2 flex flex-col justify-center text-left">
@@ -146,19 +162,7 @@ const Hero: React.FC = () => {
                     </Link>
                 </motion.div>
             </div>
-
-            <div className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 md:mt-0 relative pointer-events-auto">
-                <div className="relative rounded-3xl overflow-hidden w-full max-w-[400px] lg:max-w-[500px] group">
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0177B2]/40 to-transparent z-10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <img
-                        src={HeroBg}
-                        alt="About Civic Technologies"
-                        className="w-full h-auto object-cover will-change-transform"
-                        style={{ display: 'block', backfaceVisibility: 'hidden' }}
-                        loading="eager"
-                    />
-                </div>
-            </div>
+            <MemoizedImageSection />
         </div>
     );
 
