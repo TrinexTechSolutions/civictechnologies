@@ -166,25 +166,37 @@ const Hero: React.FC = () => {
         </div>
     );
 
-    // Filter backdrop elements (CSS background-image to prevent iOS blinking)
+    // Filter backdrop elements (pseudo-element for iOS flicker fix)
     const BackgroundElements = React.memo(() => (
         <div
-            className="absolute top-0 left-0 right-0 h-[40vh] md:h-[75vh] z-0 pointer-events-none overflow-hidden bg-black/20"
-            style={{
-                backgroundImage: `url(${HomeBgImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                transform: 'scale(1.05)',
-                willChange: 'transform',
-                backfaceVisibility: 'hidden',
-                WebkitBackfaceVisibility: 'hidden',
-                WebkitUserDrag: 'none',
-            }}
+            className="absolute top-0 left-0 right-0 h-[40vh] md:h-[75vh] z-0 pointer-events-none overflow-hidden bg-black/20 hero-bg-ios-fix"
         >
             <div className="absolute inset-x-0 top-0 h-[70%] bg-gradient-to-b from-black/90 via-black/40 to-transparent z-10"></div>
         </div>
     ));
+// iOS background flicker fix: pseudo-element for background image
+// Add this style globally or in a CSS/SCSS file if using CSS modules
+const style = document.createElement('style');
+style.innerHTML = `
+.hero-bg-ios-fix::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    background-image: url(${HomeBgImage});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    will-change: opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+`;
+if (typeof window !== 'undefined' && !document.head.querySelector('style[data-hero-bg-ios-fix]')) {
+    style.setAttribute('data-hero-bg-ios-fix', 'true');
+    document.head.appendChild(style);
+}
 
     // =========================================================================
     // HERO VIEW
