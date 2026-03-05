@@ -92,17 +92,20 @@ const Hero: React.FC = () => {
     };
 
     // Shared About Section Component
+    // Memoized About section image using CSS background-image for iOS fix
     const MemoizedImageSection = React.memo(() => (
-        <div className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 md:mt-0 relative pointer-events-auto">
-            <div className="relative rounded-3xl overflow-hidden w-full max-w-[400px] lg:max-w-[500px] group">
+        <div className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 md:mt-0 relative pointer-events-auto" style={{ contain: 'layout' }}>
+            <div
+                className="relative rounded-3xl overflow-hidden w-full max-w-[400px] lg:max-w-[500px] group about-bg-ios-fix"
+                style={{
+                    backgroundImage: `url(${HeroBg})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    minHeight: '320px',
+                }}
+            >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0177B2]/40 to-transparent z-10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <img
-                    src={HeroBg}
-                    alt="About Civic Technologies"
-                    className="w-full h-auto object-cover will-change-transform"
-                    style={{ display: 'block', backfaceVisibility: 'hidden' }}
-                    loading="eager"
-                />
             </div>
         </div>
     ));
