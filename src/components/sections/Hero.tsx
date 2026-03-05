@@ -166,10 +166,22 @@ const Hero: React.FC = () => {
         </div>
     );
 
-    // Filter backdrop elements (memoized to prevent blinking)
+    // Filter backdrop elements (CSS background-image to prevent iOS blinking)
     const BackgroundElements = React.memo(() => (
-        <div className="absolute top-0 left-0 right-0 h-[40vh] md:h-[75vh] z-0 pointer-events-none overflow-hidden bg-black/20">
-            <img src={HomeBgImage} alt="Background" className="w-full h-full object-cover scale-105 mix-blend-overlay" draggable="false" style={{ WebkitUserDrag: 'none' }} />
+        <div
+            className="absolute top-0 left-0 right-0 h-[40vh] md:h-[75vh] z-0 pointer-events-none overflow-hidden bg-black/20"
+            style={{
+                backgroundImage: `url(${HomeBgImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                transform: 'scale(1.05)',
+                willChange: 'transform',
+                backfaceVisibility: 'hidden',
+                WebkitBackfaceVisibility: 'hidden',
+                WebkitUserDrag: 'none',
+            }}
+        >
             <div className="absolute inset-x-0 top-0 h-[70%] bg-gradient-to-b from-black/90 via-black/40 to-transparent z-10"></div>
         </div>
     ));
