@@ -242,7 +242,7 @@ const Career: React.FC = () => {
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Careers Email</h3>
                                         <p>
-                                            <span className="font-bold text-[#0177B2]">careers@civictechno.com</span><br />
+                                            <span className="font-bold text-[#0177B2]">hr@civictechno.com</span><br />
                                             Expect a response within 48 hours.
                                         </p>
                                     </div>
