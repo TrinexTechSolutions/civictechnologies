@@ -186,9 +186,14 @@ const Footer: React.FC = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
                         <p className="text-gray-400 text-sm">
-                            Developed by <span className="text-[#0177B2] font-semibold">
+                            Developed by <a
+                                href="https://www.trinextechsolutions.site/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#0177B2] font-semibold hover:underline"
+                            >
                                 Trinex Tech Solutions
-                            </span>
+                            </a>
                         </p>
 
                         <span className="hidden md:inline text-gray-500">|</span>
