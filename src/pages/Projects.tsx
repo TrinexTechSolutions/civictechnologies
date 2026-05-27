@@ -162,7 +162,6 @@ const Projects: React.FC = () => {
               filteredProjects.map((project) => (
                 <ProjectCard
                   key={project.id}
-                  image={project.image}
                   name={project.name}
                   projectType={project.projectType}
                   location={project.location}

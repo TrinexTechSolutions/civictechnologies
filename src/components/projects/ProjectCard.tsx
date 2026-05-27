@@ -2,7 +2,6 @@
 import React from "react";
 
 interface ProjectCardProps {
-  image: string;
   name: string;
   // description: string;
   projectType: string;
@@ -11,7 +10,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  image,
   name,
   // description,
   projectType,
@@ -21,13 +19,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
 
-      {/* IMAGE */}
-      <div className="relative h-48 overflow-hidden">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+      {/* PROJECT NAME PANEL */}
+      <div className="relative h-48 overflow-hidden bg-gradient-to-br from-[#0177B2] via-[#1593d1] to-[#8fd6f5]">
+        <div className="flex h-full items-center justify-center p-6 text-center">
+          <h3
+            className="text-xl font-black uppercase tracking-[0.08em] text-white leading-tight"
+            title={name}
+          >
+            {name}
+          </h3>
+        </div>
         <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-gray-800 text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
           {category}
         </div>
